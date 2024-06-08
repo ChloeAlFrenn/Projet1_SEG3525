@@ -57,35 +57,42 @@ body {
   color: #343a40;
 }
 
-.sideways-container{
+.sideways-container {
   width: 100%;
   height: 80%;
   display: flex;
-  flex-direction: row 
+  flex-direction: row;
 }
+
 .slideshow-container {
   width: 75%;
+  height: 100%;
   background-color: #49bf9b;
+}
 
+.slides {
+  width: 100%;
+  height: 100%;
+}
+.slides img {
+  width: 100%;
+  height: 100%;
 }
 
 .purpose-container {
   width: 25%;
   background-color: #6b7774;
-
 }
 
 .information-container {
   width: 100%;
   height: 20%;
   background-color: #bfa049;
-
 }
 
 #nos-photographes {
   background-color: #49bf9b;
 }
-
 
 #nos-services {
   background-color: #ffba08;
