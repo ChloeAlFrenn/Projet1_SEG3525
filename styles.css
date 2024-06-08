@@ -52,12 +52,40 @@ body {
 }
 
 #accueil {
-  background-color: #f11919;
+  display: flex;
+  background-color: #bad3ed;
+  color: #343a40;
+}
+
+.sideways-container{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row 
+}
+.slideshow-container {
+  width: 75%;
+  background-color: #49bf9b;
+
+}
+
+.purpose-container {
+  width: 25%;
+  background-color: #6b7774;
+
+}
+
+.information-container {
+  width: 100%;
+  height: 20%;
+  background-color: #bfa049;
+
 }
 
 #nos-photographes {
   background-color: #49bf9b;
 }
+
 
 #nos-services {
   background-color: #ffba08;
