@@ -1,11 +1,14 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
   background-color: #343a40;
-  position: fixed;
+  height: 10%;
   width: 100%;
   z-index: 1;
   padding: 10px 15px;
@@ -33,25 +36,35 @@ body {
   color: #a7a7a7;
 }
 
+.main-content {
+  height: 90%;
+  overflow-y: auto;
+}
+
 .section {
-  height: 100vh;
+  height: calc(100vh - 10%);
   text-align: center;
   color: #ffffff;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
 #accueil {
+  background-color: #f11919;
 }
 
 #nos-photographes {
+  background-color: #49bf9b;
 }
 
 #nos-services {
+  background-color: #ffba08;
 }
 
 #rendez-vous {
+  background-color: #1982c4;
 }
 
 #contactez-nous {
