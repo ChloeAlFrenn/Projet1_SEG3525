@@ -130,11 +130,17 @@ body {
   padding-top: 1rem;
 }
 
-.full-photographe {
+.two-photographe {
   width: 100%;
-  height: 40%;
-  max-height: 100%;
-  border-bottom: 1px solid #d29a85;
+  height: 45%;
+  display: flex;
+  flex-direction: row;
+}
+
+.full-photographe {
+  width: 50%;
+  height: 100%;
+  border-top: 2px solid #d29a85;
 }
 
 .photographe {
@@ -143,9 +149,13 @@ body {
   padding: 20px;
   width: 100%;
   height: 100%;
-  background-color: #f8f9fa;
   transition: background-color 0.3s ease-in-out;
   flex-wrap: wrap;
+}
+
+.reverse-layout .photographe {
+  flex-direction: row-reverse;
+  align-items: end;
 }
 
 .photo {
@@ -164,6 +174,11 @@ body {
   overflow: hidden;
 }
 
+.reverse-layout .info-photographe {
+  text-align: right;
+  margin-right: 20px;
+}
+
 .info-photographe h2 {
   margin: 0;
   font-size: 1.8rem;
@@ -176,30 +191,19 @@ body {
   color: #555555;
 }
 
-.expand-btn {
+.info-photographe .button-link {
   background: none;
   border: none;
   color: #c1623f;
   font-size: 1rem;
   cursor: pointer;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 5px;
   text-decoration: none;
 }
 
-.expand-btn:hover {
+.info-photographe .button-link:hover {
   text-decoration: underline;
-}
-
-.portfolio {
-  display: none;
-  background-color:#d29a85;
-  padding: 10px;
-  width: 100%;
-}
-
-.full-photographe.expand .portfolio {
-  display: block;
 }
 
 #nos-services {
@@ -212,4 +216,8 @@ body {
 
 #contactez-nous {
   background-color: #c4c4c4;
+}
+
+.portfolio {
+  color: #c1623f;
 }

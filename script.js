@@ -13,9 +13,3 @@ function changeSlides() {
   slides[slideIndex].style.display = "block";  
   setTimeout(changeSlides, 2000); 
 }
-
-
-function togglePortfolio(button) {
-  const full_photographe = button.closest('.full-photographe');
-  full_photographe.classList.toggle('expand');
-}
