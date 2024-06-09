@@ -7,7 +7,7 @@ body {
 }
 
 .navbar {
-  background-color: #343a40;
+  background-color: #c1623f;
   height: 10%;
   width: 100%;
   z-index: 1;
@@ -65,9 +65,8 @@ body {
 }
 
 .slideshow-container {
-  width: 75%;
+  width: 50%;
   height: 100%;
-  background-color: #49bf9b;
 }
 
 .slides {
@@ -80,14 +79,45 @@ body {
 }
 
 .purpose-container {
-  width: 25%;
-  background-color: #6b7774;
+  width: 50%;
+  background-color: #ffffff;
+  color: #c1623f;
+  overflow: scroll;
+}
+
+.purpose-container h2 {
+  font-size: 2.5rem;
+  font-family: "Bebas Neue", cursive;
+  margin-top: 20px;
+}
+
+.purpose-container p {
+  font-size: 1.5rem;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-height: 100%;
+
+  padding-bottom: 30px;
 }
 
 .information-container {
   width: 100%;
   height: 20%;
-  background-color: #bfa049;
+  background-color: #d29a85;
+  color: #ffffff;
+  overflow: scroll;
+}
+
+.information-container p {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 20px;
+  font-family: "Bebas Neue", cursive;
+  width: 100%;
+  text-align: left;
+  max-height: 100%;
 }
 
 #nos-photographes {
