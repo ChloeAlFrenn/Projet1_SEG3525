@@ -264,6 +264,7 @@ body {
 
 #rendez-vous {
   border-top: 2px solid #d29a85;
+  border-bottom: 2px solid #d29a85;
 }
 
 .rdv {
@@ -364,10 +365,6 @@ button:active {
   font-size: 1.3rem;
 }
 
-
-#contactez-nous {
-  background-color: #c4c4c4;
-}
 
 .portfolio {
   color: #c1623f;
