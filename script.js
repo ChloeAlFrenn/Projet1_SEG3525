@@ -39,6 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
       hour++;
     }
   }
+  
+  const reserveButtons = document.querySelectorAll('button[id^="reserve"]');
+  reserveButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const service = button.getAttribute('data-service');
+      document.getElementById('serviceDropdown').value = service;
+      document.getElementById('rendez-vous').scrollIntoView({ behavior: 'smooth' });
+      checkFormCompletion();
+    });
+  });
 
   const addServiceButton = document.getElementById('addServiceButton');
   const additionalServicesContainer = document.getElementById('additionalServicesContainer');
@@ -73,13 +83,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function checkFormCompletion() {
     let allFilled = true;
 
- 
     inputs.forEach(inp => {
       if (!inp.value) {
         allFilled = false;
       }
     });
-
 
     const serviceInputs = document.querySelectorAll('.service-dropdown');
     serviceInputs.forEach(serviceInput => {
@@ -95,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
       reserveButton.classList.add('button-disabled');
     }
   }
-
 
   inputs.forEach(input => {
     input.addEventListener('input', checkFormCompletion);
