@@ -321,6 +321,14 @@ button:active {
   color: #c1623f;
 }
 
+.button-disabled {
+  background-color: #cccccc; 
+  color: #666666; 
+  cursor: not-allowed;
+  opacity: 0.5; 
+}
+
+
 .rounded-button {
   background-color: #c1623f;
   border: none;
@@ -341,6 +349,11 @@ button:active {
   background-color: white;
   border: 2px solid #c1623f;
   color: #c1623f;
+}
+
+.confirmationmsg{
+  color: #c1623f;
+  font-size: 1.3rem;
 }
 
 
