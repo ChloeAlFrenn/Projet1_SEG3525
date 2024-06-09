@@ -196,8 +196,63 @@
       </div>
     </section>
     <section id="rendez-vous" class="section">
-      <h1>Rendez-vous</h1>
+      <h1>Prendre rendez-vous</h1>
+      <div class="rdv">
+        <div class="left-side">
+          <div class="form">
+            <label for="serviceDropdown">1. Selectionnez un service:</label>
+            <select class="form-control" id="serviceDropdown">
+              <option disabled selected value="">Service</option>
+              <option value="seancePhotoMariage">Séance photo de mariage</option>
+              <option value="portraitFamille">Portrait de famille</option>
+              <option value="seancePhotoIndividuelle">Séance photo individuelle</option>
+              <option value="evenements">Événements</option>
+            </select>
+            <button id="addServiceButton" class="rounded-button">+</button>
+          </div>
+
+          <div id="additionalServicesContainer"></div>
+          <div class="form">
+            <label for="photographeDropdown">2. Selectionnez un photographe:</label>
+            <select class="form-control" id="photographeDropdown">
+              <option disabled selected value="">Photographe</option>
+              <option value="marieMartin">Marie Martin</option>
+              <option value="jeanDupont">Jean Dupont</option>
+              <option value="lucieBernard">Lucie Bernard</option>
+              <option value="jeanAlexandreLeroy">Jean Alexandre Leroy</option>
+            </select>
+          </div>
+
+          <div class="form">
+            <label for="datePicker"> 3. Selectionnez une Date:</label>
+            <input type="date" class="form-control" id="datePicker">
+          </div>
+
+          <div class="form">
+            <label for="heureDropdown">4. Selectionnez une heure:</label>
+            <select class="form-control" id="heureDropdown">
+              <option disabled selected value="">Heure</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <h3>5. entrez vos informations</h3>
+          <div class="form">
+            <label for="nameInput">Nom et prénom:</label>
+            <input type="text" class="form-control" id="nameInput">
+          </div>
+
+          <div class="form">
+            <label for="emailInput">Adresse courriel:</label>
+            <input type="email" class="form-control" id="emailInput">
+          </div>
+        </div>
+      </div>
+      <button id="reserveButton">Réserver</button>
     </section>
+
+
     <section id="contactez-nous" class="section">
       <h1>Contactez-nous</h1>
     </section>

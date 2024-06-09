@@ -128,28 +128,26 @@ body {
 }
 
 #nos-services {
-
   overflow: auto;
 }
 
 .two-services {
   display: flex;
   width: 100%;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   overflow: auto;
 }
 
 .service-box {
   padding: 10px;
   border: 3px solid #c1623f;
-  color:#c1623f;
-  margin: 10px; 
-  width: calc(50% - 20px); 
-  overflow: auto; 
+  color: #c1623f;
+  margin: 10px;
+  width: calc(50% - 20px);
+  overflow: auto;
 }
 
-
-.service-box h2{
+.service-box h2 {
   font-family: "Bebas Neue", cursive;
   font-size: 2.5rem;
 }
@@ -159,18 +157,17 @@ body {
   font-size: 1.2rem;
 }
 
-.service-box button{
+.service-box button {
   background-color: #c1623f;
   border: none;
   color: white;
   font-size: 1.2rem;
 }
 
-.service-box button:hover{
+.service-box button:hover {
   background-color: white;
   border: 2px, solid #c1623f;
   color: #c1623f;
-
 }
 
 .two-photographe {
@@ -216,17 +213,16 @@ body {
 }
 
 .photo img {
-  max-width: 100%; 
+  max-width: 100%;
   max-height: 100%;
   height: auto;
   overflow: scroll;
-
 }
 
 .info-photographe {
   margin-left: 20px;
   text-align: left;
-  flex: 1; 
+  flex: 1;
   overflow: scroll;
   max-height: 100%;
 }
@@ -266,10 +262,87 @@ body {
   text-decoration: underline;
 }
 
-
 #rendez-vous {
-  background-color: #1982c4;
+  border-top: 2px solid #d29a85;
 }
+
+.rdv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.left-side,
+.right-side {
+  max-width: 48%;
+  width: 30%;
+}
+
+.form{
+  margin: 10px;
+}
+
+.form-control{
+  border-radius: 0%;
+}
+
+.form label {
+  color: #343a40;
+  font-size: 1.3rem;
+}
+
+h3 {
+  color: #343a40;
+  font-size: 1.3rem;
+}
+
+.right-side label {
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #c1623f;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: white;
+  border: 2px, solid #c1623f;
+  color: #c1623f;
+}
+
+button:active {
+  background-color: white;
+  border: 2px, solid #c1623f;
+  color: #c1623f;
+}
+
+.rounded-button {
+  background-color: #c1623f;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.rounded-button:hover {
+  background-color: white;
+  border: 2px solid #c1623f;
+  color: #c1623f;
+}
+
 
 #contactez-nous {
   background-color: #c4c4c4;
